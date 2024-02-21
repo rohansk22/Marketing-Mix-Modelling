@@ -1,0 +1,42 @@
+Data available: Total Visits ( 2022 ), Weekly Media Spend, Events, CSI, CPI 
+First I imported all the data into excel. Since 'Event' is a binary variable, we had to scale the other columns to make it consistent. This meant scaling the target variable as well. 
+I then imported the scaled data into Python. 
+Considered Event and Weekly Media Spend as my feature variables. Total Visits as Target. 
+Used 2022 data:
+Ran OLS using stats model and linear regression. 
+R-squared of 0.049 in stats model
+R-squared of -0.174 in sklearn. 
+
+Using 2023 data, imputed values for total visits and ran regression again. 
+R-squared of   0.029  in statsmodel 
+R-squared of xyz in sklearn. 
+
+Why smote wont work? There is no class imbalance! 
+
+The problem with Cache creek is that we have insufficient/innacurate visits data. 
+Non-scalable events columns. 
+Slight correlation between weekly spend and visit data that we currently have... If data is innacurate, modelling will be poor. 
+
+
+The relationship between media spend and total visits is not linear. We may need to explore polynomial features or other non-linear transformations. This is Adstock!
+
+Include Interaction terms in the model. 
+
+Outliers: Check for outliers
+
+Model Evaluation: MSE or MAE
+
+Possible that a non-linear regression may exist? Very possible
+
+y = a + B*Media Spend + 
+
+Ad stock?
+DMA by Zipcode
+
+The PSI Interpreter was not able to parse the model correctly. Non-numeric value returned at cell $P$9
+Live Chat
+
+Adstock(t) = Ad(t) + Lambda*Adstock(t-1)
+
+
+
